@@ -1,10 +1,8 @@
 use std::{io::Write, char, fs::OpenOptions, path::PathBuf};
 use colored::Colorize;
 use objects::Player;
-use std::fs;
 
 mod objects;
-use objects::GameObjectInfo;
 mod macros;
 mod utils;
 use utils::{command, wait_input, display_box, create_player, load_game};
@@ -12,7 +10,7 @@ use utils::{command, wait_input, display_box, create_player, load_game};
 fn main() {
 
     //assets 
-    let mut history = Vec::<&str>::new(); // 명령어 히스토리
+    let mut _history = Vec::<&str>::new(); // 명령어 히스토리
     let mut player_list = Vec::<Player>::new(); // 플레이어 리스트
     let mut select_player_idx = 0; // 현재 선택된 플레이어 인덱스
     cls!();
