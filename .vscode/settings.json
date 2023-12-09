@@ -1,0 +1,7 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "./asset_game/Cargo.toml",
+        "./asset_game/Cargo.toml",
+        "./asset_game/Cargo.toml"
+    ]
+}
